@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FeelFit 24 — 24/7 Gym in Satellite Town, Gujranwala</title>
+<meta name="description" content="FeelFit 24 is Gujranwala's round-the-clock gym in Block A, Satellite Town. Separate training areas for men and women, personal training, fat loss, cardio and strength coaching. Book a free trial: 0339 7400010.">
+<link rel="canonical" href="https://ff24feelfit.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FeelFit 24 — The gym that's open when you are">
+<meta property="og:description" content="24/7 gym in Satellite Town, Gujranwala. Separate areas for men and women, expert trainers, free trial.">
+<meta property="og:image" content="assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2307090B'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-size='24' font-weight='900' fill='%2300C4FF' text-anchor='middle'%3E24%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "FeelFit 24",
+  "description": "24/7 fitness gym in Gujranwala with separate training areas for men and women, personal training, fat loss, cardio and strength programs.",
+  "url": "https://ff24feelfit.com/",
+  "telephone": "+92-339-7400010",
+  "email": "info@feelfit24.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Block A, Satellite Town",
+    "addressLocality": "Gujranwala",
+    "postalCode": "46300",
+    "addressCountry": "PK"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": ["https://www.instagram.com/feelfit.24"]
+}
+</script>
+<style>
+:root{
+  --ink:#07090B;
+  --panel:#0C1013;
+  --panel-2:#10151A;
+  --line:#1D262D;
+  --paper:#F2F5F7;
+  --muted:#97A3AB;
+  --accent:#00C4FF;
+  --accent-ink:#04222E;
+  --error:#FF7A7A;
+  --ok:#3DDC97;
+  --radius:14px;
+  --font-d:"Anton", "Arial Narrow", sans-serif;
+  --font-b:"Inter", system-ui, sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--paper);font-family:var(--font-b);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--accent);color:var(--accent-ink)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ---------- header (floats, so it may cast a shadow) ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(7,9,11,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:0 12px 32px rgba(0,0,0,.45)}
+.nav{display:flex;align-items:center;gap:28px;height:68px}
+.logo{font-family:var(--font-d);font-size:24px;letter-spacing:.04em;text-decoration:none;line-height:1}
+.logo b{color:var(--accent);font-weight:400}
+.nav nav{display:flex;gap:26px;margin-left:auto}
+.nav nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav nav a:hover{color:var(--paper)}
+.nav .call{color:var(--muted);text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap}
+.nav .call:hover{color:var(--accent)}
+
+/* ---------- buttons: all states ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:15px;padding:14px 26px;border-radius:999px;border:1px solid var(--accent);text-decoration:none;cursor:pointer;transition:transform .18s ease, opacity .18s ease, background .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn.ghost{background:transparent;color:var(--paper);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn.small{padding:10px 20px;font-size:14px}
+
+/* ---------- hero ---------- */
+.hero{border-bottom:1px solid var(--line);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:0;align-items:stretch}
+.hero-copy{padding:72px 48px 72px 0;display:flex;flex-direction:column;justify-content:center}
+.open-chip{display:inline-flex;align-items:center;gap:9px;align-self:flex-start;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:26px}
+.open-chip .dot{width:8px;height:8px;border-radius:50%;background:var(--ok);animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{font-family:var(--font-d);font-size:clamp(44px,6.2vw,84px);line-height:.98;letter-spacing:.01em;text-transform:uppercase;font-weight:400}
+.hero h1 .hl{color:var(--accent)}
+.hero .lede{color:var(--muted);font-size:18px;max-width:46ch;margin:24px 0 32px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-note{font-size:13px;color:var(--muted);margin-top:16px}
+.hero-media{position:relative;min-height:420px}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.bignum{position:absolute;left:-38px;bottom:26px;font-family:var(--font-d);font-size:clamp(90px,11vw,150px);line-height:.85;color:var(--paper);text-shadow:0 4px 40px rgba(0,0,0,.6)}
+.bignum span{color:var(--accent)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.stat{padding:26px 8px 30px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:none;padding-left:0}
+.stat .n{font-family:var(--font-d);font-size:40px;line-height:1;color:var(--paper)}
+.stat .n em{font-style:normal;color:var(--accent)}
+.stat p{color:var(--muted);font-size:14px;margin-top:6px;max-width:22ch}
+
+/* ---------- marquee (transform only) ---------- */
+.marquee{border-bottom:1px solid var(--line);overflow:hidden;padding:16px 0;background:var(--panel)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scroll 30s linear infinite}
+.marquee span{font-family:var(--font-d);text-transform:uppercase;font-size:19px;letter-spacing:.08em;padding:0 22px;white-space:nowrap;color:var(--paper)}
+.marquee i{font-style:normal;color:var(--accent)}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- sections ---------- */
+section{padding:88px 0}
+.sec-head{display:flex;align-items:baseline;gap:20px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head .kicker{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.sec-head h2{font-family:var(--font-d);font-size:clamp(32px,4.4vw,52px);line-height:1.02;text-transform:uppercase;font-weight:400}
+.sec-head p{color:var(--muted);max-width:52ch;margin-left:auto;font-size:15px}
+
+/* ---------- programs: editorial index, not a card grid ---------- */
+.prog{border-top:1px solid var(--line)}
+.prog-row{display:grid;grid-template-columns:84px 1fr 300px;gap:28px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:background .2s}
+.prog-row:hover{background:var(--panel)}
+.prog-row .idx{font-family:var(--font-d);font-size:34px;color:var(--accent);padding-left:6px}
+.prog-row h3{font-family:var(--font-d);font-size:clamp(26px,3vw,38px);text-transform:uppercase;font-weight:400;line-height:1.05}
+.prog-row p{color:var(--muted);font-size:15px;max-width:52ch;margin-top:6px}
+.prog-row figure{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+.prog-row figure img{width:100%;height:170px;object-fit:cover;object-position:center 22%;transition:transform .45s ease}
+.prog-row:hover figure img{transform:scale(1.05)}
+.prog-row.text-only figure{display:none}
+.prog-row .tag{justify-self:start;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--line);border-radius:999px;padding:6px 12px;margin-top:12px;display:inline-block}
+
+/* ---------- the space ---------- */
+.space{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.space-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.space .big{font-family:var(--font-d);font-size:clamp(30px,3.6vw,46px);line-height:1.08;text-transform:uppercase;font-weight:400}
+.space .big span{color:var(--accent)}
+.space .sub{color:var(--muted);margin-top:18px;max-width:44ch}
+.fac{list-style:none}
+.fac li{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.fac li:first-child{padding-top:4px}
+.fac .fi{font-family:var(--font-d);color:var(--accent);font-size:15px;min-width:30px}
+.fac h3{font-size:16px;font-weight:600}
+.fac p{color:var(--muted);font-size:14px}
+
+/* ---------- trainers ---------- */
+.trainer{display:grid;grid-template-columns:84px 1fr auto;gap:28px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
+.trainer:first-of-type{border-top:1px solid var(--line)}
+.trainer .idx{font-family:var(--font-d);font-size:34px;color:var(--line);padding-left:6px;transition:color .2s}
+.trainer:hover .idx{color:var(--accent)}
+.trainer h3{font-family:var(--font-d);font-size:clamp(26px,3vw,36px);text-transform:uppercase;font-weight:400}
+.trainer p{color:var(--muted);font-size:15px}
+.trainer .yrs{font-family:var(--font-d);font-size:44px;color:var(--paper);text-align:right;line-height:1}
+.trainer .yrs small{display:block;font-family:var(--font-b);font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:4px}
+
+/* ---------- trial form ---------- */
+.trial{background:var(--panel);border-top:1px solid var(--line)}
+.trial-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.trial h2{font-family:var(--font-d);font-size:clamp(34px,4.4vw,54px);text-transform:uppercase;line-height:1.02;font-weight:400}
+.trial h2 span{color:var(--accent)}
+.trial .sub{color:var(--muted);margin-top:16px;max-width:42ch}
+.trial-points{list-style:none;margin-top:28px}
+.trial-points li{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px;display:flex;gap:12px}
+.trial-points li::before{content:"—";color:var(--accent);font-weight:700}
+form .field{margin-bottom:18px}
+form label{display:block;font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:7px}
+form input,form select{width:100%;background:var(--ink);border:1px solid var(--line);border-radius:10px;color:var(--paper);font:inherit;font-size:15px;padding:13px 14px;transition:border-color .2s}
+form input:hover,form select:hover{border-color:#2C3942}
+form input:focus,form select:focus{border-color:var(--accent);outline:none}
+form .err{display:none;color:var(--error);font-size:13px;margin-top:6px}
+form .field.invalid input,form .field.invalid select{border-color:var(--error)}
+form .field.invalid .err{display:block}
+.form-ok{display:none;border:1px solid var(--ok);border-radius:var(--radius);padding:22px;background:var(--panel-2)}
+.form-ok h3{font-family:var(--font-d);text-transform:uppercase;font-weight:400;font-size:24px;color:var(--ok)}
+.form-ok p{color:var(--muted);font-size:14px;margin-top:6px}
+form.sent .fields{display:none}
+form.sent .form-ok{display:block}
+
+/* ---------- visit / footer ---------- */
+.visit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.visit h3{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.visit p{color:var(--muted);font-size:15px}
+.visit a{color:var(--paper);text-decoration:none;font-weight:600}
+.visit a:hover{color:var(--accent)}
+footer{border-top:1px solid var(--line);padding:34px 0 44px;color:var(--muted);font-size:13px}
+.foot{display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+
+/* ---------- reveal (transform/opacity only) ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  .nav nav{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-copy{padding:52px 0 40px}
+  .hero-media{min-height:340px;order:2}
+  .bignum{left:10px}
+  .prog-row{grid-template-columns:52px 1fr}
+  .prog-row figure{display:none}
+  .space-grid,.trial-grid{grid-template-columns:1fr;gap:36px}
+  .visit-grid{grid-template-columns:1fr;gap:28px}
+  .hero-stats{grid-template-columns:1fr 1fr 1fr}
+  .stat .n{font-size:30px}
+  section{padding:60px 0}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .marquee-track{animation:none}
+  .open-chip .dot{animation:none}
+  .rv{opacity:1;transform:none;transition:none}
+  .btn,.prog-row figure img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="FeelFit 24 home">FEELFIT <b>24</b></a>
+    <nav aria-label="Main">
+      <a href="#programs">Programs</a>
+      <a href="#space">The Space</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="call" href="tel:+923397400010">0339 7400010</a>
+    <a class="btn small" href="#trial">Book a free trial</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="open-chip"><span class="dot" aria-hidden="true"></span><span id="openStatus">Open now · Satellite Town, Gujranwala</span></span>
+          <h1>The gym that's <span class="hl">open</span> when you are</h1>
+          <p class="lede">FeelFit 24 never closes. Train at 5 in the morning or 1 at night — full equipment, real coaches, and separate training areas for men and women, right here in Satellite Town.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="#trial">Book your free trial</a>
+            <a class="btn ghost" href="#programs">See the programs</a>
+          </div>
+          <p class="hero-note">First session is on us. No card, no commitment — just show up.</p>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero.jpg" alt="A FeelFit 24 coach guiding a member through a dumbbell row" fetchpriority="high">
+          <div class="bignum" aria-hidden="true">24<span>/7</span></div>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="n">24<em>/7</em></div><p>Open every hour of every day, all year</p></div>
+        <div class="stat"><div class="n">6</div><p>Training programs, from fat loss to CrossFit</p></div>
+        <div class="stat"><div class="n">2</div><p>Separate training areas for men and women</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <span>Strength Building <i>✦</i></span><span>Fat Loss <i>✦</i></span><span>Personal Training <i>✦</i></span><span>Cardio Fitness <i>✦</i></span><span>Weight Training <i>✦</i></span><span>CrossFit <i>✦</i></span>
+    </div>
+  </div>
+
+  <!-- PROGRAMS -->
+  <section id="programs">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Programs</span>
+        <h2>Pick a goal.<br>We'll build the plan.</h2>
+        <p>Six ways to train at FeelFit 24. Every program starts with a free trial session, so you can feel the floor before you commit to anything.</p>
+      </div>
+      <div class="prog rv">
+        <a class="prog-row" href="#trial">
+          <span class="idx">01</span>
+          <div><h3>Weight Training</h3><p>Free weights, racks and machines for progressive overload — the backbone of getting stronger, week after week.</p></div>
+          <figure><img src="assets/weights.jpg" alt="Member performing a seated dumbbell curl during weight training" loading="lazy"></figure>
+        </a>
+        <a class="prog-row" href="#trial">
+          <span class="idx">02</span>
+          <div><h3>Fat Loss</h3><p>Structured training and honest coaching built around one thing: steady, measurable fat loss that stays off.</p></div>
+          <figure><img src="assets/fatloss.jpg" alt="Member checking his waist measurement during a fat loss program" loading="lazy"></figure>
+        </a>
+        <a class="prog-row" href="#trial">
+          <span class="idx">03</span>
+          <div><h3>Personal Training</h3><p>One coach, one plan, built around your body and your schedule. Form checks on every set, progress tracked every week.</p></div>
+          <figure><img src="assets/pt.jpg" alt="Personal trainer coaching a member through a dumbbell row" loading="lazy"></figure>
+        </a>
+        <a class="prog-row" href="#trial">
+          <span class="idx">04</span>
+          <div><h3>Cardio Fitness</h3><p>Treadmills and conditioning work that builds your engine — better stamina, stronger heart, faster recovery.</p></div>
+          <figure><img src="assets/cardio.jpg" alt="Two members running on treadmills in the cardio area" loading="lazy"></figure>
+        </a>
+        <a class="prog-row text-only" href="#trial">
+          <span class="idx">05</span>
+          <div><h3>Strength Building</h3><p>Barbell-first coaching on the big lifts — squat, bench, deadlift — with programming that adds weight safely.</p><span class="tag">Barbell coaching</span></div>
+          <figure></figure>
+        </a>
+        <a class="prog-row text-only" href="#trial">
+          <span class="idx">06</span>
+          <div><h3>CrossFit</h3><p>High-intensity functional workouts that mix lifting, conditioning and bodyweight work. Hard, varied, never boring.</p><span class="tag">Conditioning</span></div>
+          <figure></figure>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SPACE -->
+  <section class="space" id="space">
+    <div class="wrap">
+      <div class="space-grid">
+        <div class="rv">
+          <p class="big">Built for <span>everyone</span> in the house — men and women train in their own space.</p>
+          <p class="sub">Plenty of gyms say "ladies welcome." We went further: separate training areas, so every member can train comfortably, plus the small things — a posing room, a makeup room, a prayer space — that make a gym feel like yours.</p>
+          <a class="btn ghost" href="#trial" style="margin-top:28px">Come see it yourself</a>
+        </div>
+        <ul class="fac rv">
+          <li><span class="fi">A.</span><div><h3>Separate men's &amp; women's areas</h3><p>Full training floors for both, so nobody waits and nobody feels watched.</p></div></li>
+          <li><span class="fi">B.</span><div><h3>Posing room</h3><p>A dedicated room for physique checks and progress photos.</p></div></li>
+          <li><span class="fi">C.</span><div><h3>Ladies' makeup room</h3><p>Freshen up after your session before heading out.</p></div></li>
+          <li><span class="fi">D.</span><div><h3>Luxury bath &amp; changing rooms</h3><p>Proper showers and changing space — not an afterthought.</p></div></li>
+          <li><span class="fi">E.</span><div><h3>Prayer space</h3><p>A quiet prayer area for male and female members.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINERS -->
+  <section id="trainers">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Trainers</span>
+        <h2>Coaches who<br>actually coach</h2>
+        <p>Not floor decoration. Our trainers program your sessions, correct your form, and track whether it's working.</p>
+      </div>
+      <div class="rv">
+        <div class="trainer">
+          <span class="idx">01</span>
+          <div><h3>Ali Khan</h3><p>Strength training &amp; muscle building</p></div>
+          <div class="yrs">8+<small>years coaching</small></div>
+        </div>
+        <div class="trainer">
+          <span class="idx">02</span>
+          <div><h3>Sarah Malik</h3><p>Cardio &amp; functional training</p></div>
+          <div class="yrs">5+<small>years coaching</small></div>
+        </div>
+        <div class="trainer">
+          <span class="idx">03</span>
+          <div><h3>Ahmed Raza</h3><p>Fat loss &amp; body transformation</p></div>
+          <div class="yrs">6+<small>years coaching</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE TRIAL -->
+  <section class="trial" id="trial">
+    <div class="wrap">
+      <div class="trial-grid">
+        <div class="rv">
+          <h2>Your first session is <span>free</span></h2>
+          <p class="sub">Tell us your name, number and goal. We'll open WhatsApp with your trial request ready to send — the team confirms your slot from there.</p>
+          <ul class="trial-points">
+            <li>Full access to the floor for one session</li>
+            <li>A coach walks you through a starter plan</li>
+            <li>Come any hour — we're open 24/7 anyway</li>
+          </ul>
+        </div>
+        <form id="trialForm" class="rv" novalidate>
+          <div class="fields">
+            <div class="field" data-field="name">
+              <label for="fName">Your name</label>
+              <input id="fName" name="name" type="text" autocomplete="name" placeholder="e.g. Bilal Ahmed">
+              <p class="err">We need your name so the team knows who's coming. Add it above and try again.</p>
+            </div>
+            <div class="field" data-field="phone">
+              <label for="fPhone">Mobile number</label>
+              <input id="fPhone" name="phone" type="tel" autocomplete="tel" placeholder="03XX XXXXXXX">
+              <p class="err">That number looks incomplete — enter your full mobile number so we can confirm your slot.</p>
+            </div>
+            <div class="field" data-field="goal">
+              <label for="fGoal">What are you training for?</label>
+              <select id="fGoal" name="goal">
+                <option value="">Choose a goal…</option>
+                <option>Fat loss</option>
+                <option>Muscle &amp; strength</option>
+                <option>Cardio &amp; fitness</option>
+                <option>Personal training</option>
+                <option>CrossFit</option>
+                <option>Just getting started</option>
+              </select>
+              <p class="err">Pick a goal so we can pair you with the right coach. Choose one from the list.</p>
+            </div>
+            <button class="btn" type="submit" id="submitBtn">Send my free trial request</button>
+            <p class="hero-note">Opens WhatsApp — nothing is sent until you tap send there. Prefer to talk? Call <a href="tel:+923397400010" style="color:var(--accent)">0339 7400010</a>.</p>
+          </div>
+          <div class="form-ok" role="status">
+            <h3>You're in</h3>
+            <p id="okText">Your trial request is ready in WhatsApp. If it didn't open, call us on 0339 7400010 and mention "free trial".</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="kicker">Visit</span>
+        <h2>Find us in<br>Satellite Town</h2>
+      </div>
+      <div class="visit-grid rv">
+        <div>
+          <h3>Address</h3>
+          <p>Block A, Satellite Town,<br>Gujranwala 46300, Pakistan<br><a href="https://www.google.com/maps/search/?api=1&amp;query=FeelFit+24+Block+A+Satellite+Town+Gujranwala" target="_blank" rel="noopener">Get directions →</a></p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Open 24 hours, every day.<br>Morning, midnight, 4 a.m. —<br>the door is open.</p>
+        </div>
+        <div>
+          <h3>Talk to us</h3>
+          <p><a href="tel:+923397400010">0339 7400010</a><br><a href="mailto:info@feelfit24.com">info@feelfit24.com</a><br><a href="https://www.instagram.com/feelfit.24" target="_blank" rel="noopener">@feelfit.24 on Instagram</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="logo" href="#top" style="font-size:19px">FEELFIT <b>24</b></a>
+    <span>© 2026 FeelFit 24 · Block A, Satellite Town, Gujranwala · Open 24/7</span>
+    <a href="https://www.instagram.com/feelfit.24" target="_blank" rel="noopener" style="color:var(--muted);text-decoration:none">Instagram</a>
+  </div>
+</footer>
+
+<script>
+// Duplicate marquee content for a seamless loop
+(function(){
+  var t = document.getElementById('marqueeTrack');
+  t.innerHTML += t.innerHTML;
+})();
+
+// Live "open now" status — the gym never closes, so show the current local time
+(function(){
+  var el = document.getElementById('openStatus');
+  function tick(){
+    try{
+      var now = new Date().toLocaleTimeString('en-PK',{hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Asia/Karachi'});
+      el.textContent = 'Open now · ' + now + ' in Gujranwala';
+    }catch(e){ el.textContent = 'Open now · Satellite Town, Gujranwala'; }
+  }
+  tick(); setInterval(tick, 60000);
+})();
+
+// Reveal on scroll (transform/opacity only)
+(function(){
+  var els = document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in')}); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:.12});
+  els.forEach(function(e){ io.observe(e); });
+})();
+
+// Free-trial form -> WhatsApp, with inline validation and a success state
+(function(){
+  var form = document.getElementById('trialForm');
+  function setInvalid(name, bad){
+    var f = form.querySelector('[data-field="'+name+'"]');
+    if(f) f.classList.toggle('invalid', bad);
+    return !bad;
+  }
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var name = document.getElementById('fName').value.trim();
+    var phone = document.getElementById('fPhone').value.replace(/[\s-]/g,'');
+    var goal = document.getElementById('fGoal').value;
+    var ok = true;
+    ok = setInvalid('name', name.length < 2) && ok;
+    ok = setInvalid('phone', !/^(\+92|0)?3\d{9}$/.test(phone)) && ok;
+    ok = setInvalid('goal', !goal) && ok;
+    if(!ok) return;
+    var msg = 'Assalam-o-Alaikum! I am ' + name + '. I want to book a free trial at FeelFit 24. My goal: ' + goal + '. My number: ' + phone + '.';
+    window.open('https://wa.me/923397400010?text=' + encodeURIComponent(msg), '_blank');
+    form.classList.add('sent');
+  });
+  ['fName','fPhone','fGoal'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', function(){
+      var wrap = this.closest('.field'); if(wrap) wrap.classList.remove('invalid');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
